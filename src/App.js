@@ -6,12 +6,12 @@ import Board from "./Board";
 
 function App() {
   return (
-      <div className="App container">
-          <h1>Triple T</h1>
+    <div className="App container">
+      <h1>Triple T</h1>
 
-          <Board />
-      </div>
-  )
+      <Board />
+    </div>
+  );
 }
 
 export default App;

@@ -1,33 +1,59 @@
 import React, { Component } from "react";
 
 class Board extends Component {
-    render() {
-      return (
-        <div className="container board">
-          <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td id="cell-top-left" onClick={() => alert("clicked")}>
-                  X
-                </td>
-                <td id="cell-top-middle">X</td>
-                <td id="cell-top-right">X</td>
-              </tr>
-              <tr>
-                <td id="cell-middle-left">X</td>
-                <td id="cell-middle-middle">X</td>
-                <td id="cell-middle-right">X</td>
-              </tr>
-              <tr>
-                <td id="cell-bottom-left">X</td>
-                <td id="cell-bottom-middle">X</td>
-                <td id="cell-bottom-right">X</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      );
-    }
-  };
+    constructor(props) {
+        super(props);
 
-  export default Board;
+        this.state = [];
+    }
+
+  render() {
+    let wasClicked = () => {
+      console.log(`${this} Cell was clicked`);
+    };
+
+    return (
+      <div className="container centered hidden" id="game-board">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>
+                <button id="cell-top-left" className="btn-block"></button>
+              </td>
+              <td>
+                <button id="cell-top-middle"></button>
+              </td>
+              <td>
+                <button id="cell-top-right"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="cell-middle-left"></button>
+              </td>
+              <td>
+                <button id="cell-middle-middle"></button>
+              </td>
+              <td>
+                <button id="cell-middle-right"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="cell-bottom-left"></button>
+              </td>
+              <td>
+                <button id="cell-bottom-middle"></button>
+              </td>
+              <td>
+                <button id="cell-bottom-right"></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+}
+
+export default Board;

@@ -13,3 +13,18 @@
 #cell-bottom-right:hover {
   background-color: #f8f9fa;
 }
+
+/* come back to */
+/* button {
+  border: none;
+  background-color: transparent;
+} */
+
+button {
+  width: 100%;
+  height: 100%;
+}
+
+.centered {
+  margin: 0 auto;
+}
