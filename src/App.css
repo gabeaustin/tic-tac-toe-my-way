@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+#cell-top-left:hover,
+:hover#cell-top-middle:hover,
+#cell-top-right:hover,
+#cell-middle-left:hover,
+#cell-middle-middle:hover,
+#cell-middle-right:hover,
+#cell-bottom-left:hover,
+#cell-bottom-middle:hover,
+#cell-bottom-right:hover {
+  background-color: #f8f9fa;
+}
